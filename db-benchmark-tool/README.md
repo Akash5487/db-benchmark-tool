@@ -96,6 +96,4 @@ Pull requests are welcome! Please read CONTRIBUTING.md first.
 
 ## 📧 Contact
 
-Your Name - [@yourhandle](https://twitter.com/yourhandle)
-
 Project Link: [https://github.com/yourusername/db-benchmark-tool](https://github.com/yourusername/db-benchmark-tool)
