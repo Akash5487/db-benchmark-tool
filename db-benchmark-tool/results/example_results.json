@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-02-10T14:30:00.000000",
+  "config": {
+    "dataset_size": 10000,
+    "concurrent_connections": 10,
+    "iterations": 5
+  },
+  "databases": {
+    "postgresql": {
+      "crud": {
+        "insert_customers": 0.245,
+        "insert_products": 0.123,
+        "insert_orders": 0.489,
+        "select_simple": 0.012,
+        "select_join": 0.089,
+        "update_batch": 0.156,
+        "delete_batch": 0.098
+      },
+      "indexing": {
+        "without_index": 0.134,
+        "with_index": 0.045,
+        "improvement_percent": 66.4
+      },
+      "stats": {
+        "customers_count": 1000,
+        "products_count": 500,
+        "orders_count": 1900
+      }
+    },
+    "mysql": {
+      "crud": {
+        "insert_customers": 0.278,
+        "insert_products": 0.145,
+        "insert_orders": 0.523,
+        "select_simple": 0.015,
+        "select_join": 0.102,
+        "update_batch": 0.171,
+        "delete_batch": 0.105
+      },
+      "indexing": {
+        "without_index": 0.156,
+        "with_index": 0.058,
+        "improvement_percent": 62.8
+      },
+      "stats": {
+        "customers_count": 1000,
+        "products_count": 500,
+        "orders_count": 1900
+      }
+    },
+    "mongodb": {
+      "crud": {
+        "insert_customers": 0.198,
+        "insert_products": 0.098,
+        "insert_orders": 0.412,
+        "select_simple": 0.008,
+        "select_aggregation": 0.145,
+        "update_batch": 0.134,
+        "delete_batch": 0.087
+      },
+      "indexing": {
+        "without_index": 0.089,
+        "with_index": 0.034,
+        "improvement_percent": 61.8
+      },
+      "stats": {
+        "customers_count": 1000,
+        "products_count": 500,
+        "orders_count": 1900
+      }
+    }
+  }
+}

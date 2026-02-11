@@ -1,0 +1,39 @@
+databases:
+  postgres:
+    host: localhost
+    port: 5432
+    user: benchuser
+    password: benchpass
+    database: benchdb
+  
+  mysql:
+    host: localhost
+    port: 3306
+    user: benchuser
+    password: benchpass
+    database: benchdb
+  
+  mongodb:
+    host: localhost
+    port: 27017
+    user: benchuser
+    password: benchpass
+    database: benchdb
+
+benchmark:
+  dataset_size: 10000
+  concurrent_connections: 10
+  iterations: 5
+  warmup_runs: 2
+
+tests:
+  - crud_operations
+  - complex_queries
+  - indexing_impact
+  - concurrent_load
+  - bulk_operations
+
+output:
+  json_results: results/benchmark_results.json
+  html_report: reports/index.html
+  csv_export: results/benchmark_results.csv
